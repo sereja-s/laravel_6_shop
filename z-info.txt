@@ -1,0 +1,16 @@
+composer self-update (сразу после входа в консоль OpenServer)
+
+затем перейти в папку с проектом: здесь- cd domains/LaravelShop и запусить командой: composer update
+установку пакетов описанных в composer.json  (в проекте появится папка: vendor) 
+
+Переименовать файл: .env.example в .env
+
+В терминале VS Code для своего проекта: здесь- d:\OpenServer\domains\LaravelShop запустить команду:
+ "php artisan key:generate" (при этом в файле: .env сгенерируется ключ: APP_KEY)
+
+в файле: .env даём название базе данных: здесь: DB_DATABASE=laravelshop, затем создаём БД с таким названием в PhpMyAdmin
+
+в терминале VS Code в проекте запускаем команду: "php artisan migrate" (будут созданы все таблицы описанные в проекте),
+
+затем команду: "php artisan serve" и нажимаем на появившуюся ссылку: http://127.0.0.1:8000 (с нажатой клавишей CTRL) 
+При этом перейдём на страничку нашего сайта
